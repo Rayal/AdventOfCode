@@ -24,12 +24,14 @@ def get_sum_pair(puzzle_input: list) -> int:
     :param puzzle_input: The list of integers to search through.
     :return: The product of the two (or three [spoilers]) integers which add up to 2020.
     """
-    for i in range(len(puzzle_input)):
-        for j in range(len(puzzle_input)):
-            for k in range(len(puzzle_input)):
+    # The following isn't very elegant. It iterates through values that may have already been
+    # tried and failed.
+    for i, i_val in enumerate(puzzle_input):
+        for j, j_val in enumerate(puzzle_input):
+            for k, k_val in enumerate(puzzle_input):
                 if i != j != k:
-                    if puzzle_input[i] + puzzle_input[j] + puzzle_input[k] == 2020:
-                        return puzzle_input[i] * puzzle_input[j] * puzzle_input[k]
+                    if i_val + j_val + k_val == 2020:
+                        return i_val * j_val * k_val
     return 0
 
 
