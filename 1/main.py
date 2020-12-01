@@ -36,5 +36,6 @@ def get_sum_pair(puzzle_input: list) -> int:
 
 
 if __name__ == "__main__":
+    # Usage: python main.py <path/to/input/file>
     puzzle_in = get_input(argv[1])
     print(get_sum_pair(puzzle_in))
