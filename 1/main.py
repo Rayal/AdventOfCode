@@ -7,7 +7,7 @@ Licensed under MIT license.
 from sys import argv
 
 
-def get_input(input_path) -> list:
+def get_input(input_path: str) -> list:
     """
     Get the Puzzle Input from file and convert it into a list of integers for processing.
     :param input_path: The path to the puzzle input file.
@@ -29,7 +29,7 @@ def get_sum_pair(puzzle_input: list) -> int:
     for i, i_val in enumerate(puzzle_input):
         for j, j_val in enumerate(puzzle_input):
             for k, k_val in enumerate(puzzle_input):
-                if i != j != k:
+                if i != j != k != i:
                     if i_val + j_val + k_val == 2020:
                         return i_val * j_val * k_val
     return 0
