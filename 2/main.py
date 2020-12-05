@@ -1,5 +1,5 @@
 """
-This file solves the seond Advent of Code 2020 puzzle.
+This file solves the second Advent of Code 2020 puzzle.
 https://adventofcode.com/2020/day/2
 """
 

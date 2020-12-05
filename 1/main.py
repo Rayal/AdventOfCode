@@ -1,8 +1,6 @@
 """
 This file is my solution to the first day of Advent Of Code 2020.
 https://adventofcode.com/2020/day/1
-
-Licensed under MIT license.
 """
 from sys import argv
 
